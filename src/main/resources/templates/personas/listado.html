@@ -14,12 +14,14 @@
                 <tr>
                     <th>id</th>
                     <th>nombre</th>
+                    <th>apellidos</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:each="persona : ${personas}">
                     <td th:text="${persona.id}">1</td>
-                    <td th:text="${persona.nombre}">Díez Ricondo, Diego</td>
+                    <td th:text="${persona.nombre}">Diego</td>
+                    <td th:text="${persona.apellidos}">Díez Ricondo</td>
                 </tr>
             </tbody>
         </table>
