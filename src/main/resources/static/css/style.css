@@ -1,8 +1,89 @@
-table {
-    border-collapse: collapse;
-    border: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-table tr {
+table {
+    border-collapse: collapse;
+}
+
+tr {
     border-bottom: 1px solid #000;
+}
+
+thead tr {
+    border-bottom-width: 2px;
+}
+
+th, td {
+    padding: .4em .8em;
+    text-align: left;
+}
+
+.filtrar-form {
+    background-color: rgba(0,0,0,.05);
+    padding: 1em;
+    display: table;
+}
+
+.filtrar-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filtrar-form fieldset legend {
+    font-size: .9em;
+    margin-bottom: .5em;
+}
+
+.filtrar-form fieldset > div {
+    margin-bottom: .5em;
+}
+
+.filtrar-form label {
+    display: block;
+}
+
+.btn {
+    padding: .4em .8em;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    font-weight: 700;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.pagination a {
+    line-height: 3ch;
+    width: 3ch;
+    text-align: center;
+    margin-right: .4em;
+    border: 2px solid #000;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
 }

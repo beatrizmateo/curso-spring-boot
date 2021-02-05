@@ -9,6 +9,22 @@
     </head>
     <body>
         <h1 th:text="#{personas.listado.title}">Personas</h1>
+        
+        <form class="filtrar-form" th:object="${filtros}">
+            <fieldset>
+                <legend>Filtrar por:</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" th:value="*{nombre}" autofocus=""/>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input id="apellidos" type="text" name="apellidos" th:value="*{apellidos}"/>
+                </div>
+            </fieldset>
+            <input type="submit" class="btn" th:value="#{personas.listado.filtrar.btn}"/>
+        </form>
+        
         <table border="1">
             <thead>
                 <tr>
