@@ -15,6 +15,7 @@
     <description>Curso de spring-boot</description>
     <properties>
         <java.version>11</java.version>
+        <lombok.version>1.18.18</lombok.version>
     </properties>
     <dependencies>
         <dependency>
