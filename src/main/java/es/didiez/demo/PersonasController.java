@@ -33,8 +33,7 @@ public class PersonasController {
     }
     
     private PersonaVista toPersonaVista(Persona persona){
-        String[] apellidosNombre = persona.getNombre().split(",");
-        return new PersonaVista(persona.getId(), apellidosNombre[1], apellidosNombre[0]);
+        return new PersonaVista(persona.getId(), persona.getNombre(), persona.getApellidos());
     }
     
     @Value
